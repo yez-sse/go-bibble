@@ -1,0 +1,5 @@
+package donggui
+
+func numWays() {
+
+}
