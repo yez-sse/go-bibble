@@ -1,2 +1,2 @@
 # go learning
-go语言圣经上的例子
+go语言学习的文章和小demo
