@@ -8,3 +8,14 @@ func reverseBits(num uint32) uint32 {
 	}
 	return res
 }
+
+func hammingWeight(num uint32) int {
+	res := 0
+	for i := 0; i < 32 && num != 0; i++ {
+		if (num & 1) == 1 {
+			res++
+		}
+		num >>= 1
+	}
+	return res
+}
