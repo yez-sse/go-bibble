@@ -1,14 +1,15 @@
 package list
 
 import "container/list"
+import "go-learning/struct"
 
 // 翻转链表的方法
-func reversePrint3(head *ListNode) []int {
+func reversePrint3(head *_struct.ListNode) []int {
 	if head == nil {
 		return nil
 	}
 
-	var newHead *ListNode
+	var newHead *_struct.ListNode
 	for head != nil {
 		temp := head.Next
 		head.Next = newHead
@@ -25,13 +26,13 @@ func reversePrint3(head *ListNode) []int {
 }
 
 // 用递归的方法
-func reversePrint2(head *ListNode) []int {
+func reversePrint2(head *_struct.ListNode) []int {
 	if head == nil {
 		return nil
 	}
 	return appendData(head)
 }
-func appendData(head *ListNode) []int {
+func appendData(head *_struct.ListNode) []int {
 	if head.Next != nil {
 		// 这里的递归怕是比较难学会举一反三了
 		list := appendData(head.Next)
@@ -43,7 +44,7 @@ func appendData(head *ListNode) []int {
 }
 
 // 用栈的方法
-func reversePrint(head *ListNode) []int {
+func reversePrint(head *_struct.ListNode) []int {
 	if head == nil {
 		return nil
 	}

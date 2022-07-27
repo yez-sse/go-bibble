@@ -1,13 +1,13 @@
 package util
 
-type Util struct {
-}
+//type Util struct {
+//}
+//
+//func NewUtil() *Util {
+//	return &Util{}
+//}
 
-func NewUtil() *Util {
-	return &Util{}
-}
-
-func (util *Util)GetMax(x, y int) int {
+func GetMax(x, y int) int {
 	if x >= y {
 		return x
 	}
