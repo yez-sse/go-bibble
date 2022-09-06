@@ -1,10 +1,11 @@
-package lc1
+package lc3
 
 //var res200 = 0	//这么写有问题
 
 var res200 int
+
 func numIslands(grid [][]byte) int {
-	res200 = 0	//这样就可以，为什么呢？
+	res200 = 0 //这样就可以，为什么呢？
 	for i := 0; i < len(grid); i++ {
 		for j := 0; j < len(grid[0]); j++ {
 			if grid[i][j] == '1' {
@@ -21,8 +22,8 @@ func dfsGrid(grid [][]byte, i, j int) {
 		return
 	}
 	grid[i][j] = 2
-	dfsGrid(grid, i - 1, j)
-	dfsGrid(grid, i + 1, j)
-	dfsGrid(grid, i, j - 1)
-	dfsGrid(grid, i, j + 1)
+	dfsGrid(grid, i-1, j)
+	dfsGrid(grid, i+1, j)
+	dfsGrid(grid, i, j-1)
+	dfsGrid(grid, i, j+1)
 }

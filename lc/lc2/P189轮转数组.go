@@ -1,4 +1,4 @@
-package lc1
+package lc2
 
 func rotate(nums []int, k int) {
 	k %= len(nums)

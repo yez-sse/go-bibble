@@ -1,11 +1,11 @@
-package lc1
+package lc2
 
 import _struct "go-learning/struct"
 
 var res []int
 
 func rightSideView(root *_struct.TreeNode) []int {
-	res = []int{}	//为什么这里一定要初始化一下呢？？
+	res = []int{} //为什么这里一定要初始化一下呢？？
 	dfs(root, 0)
 	return res
 }
@@ -21,7 +21,6 @@ func dfs(root *_struct.TreeNode, depth int) {
 	dfs(root.Right, depth)
 	dfs(root.Left, depth)
 }
-
 
 //bfs在go语言里应该怎么写
 

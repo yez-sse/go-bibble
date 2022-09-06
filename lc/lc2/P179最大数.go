@@ -1,4 +1,4 @@
-package lc1
+package lc2
 
 import (
 	"sort"

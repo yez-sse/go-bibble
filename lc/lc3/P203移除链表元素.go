@@ -1,4 +1,4 @@
-package lc1
+package lc3
 
 import (
 	_struct "go-learning/struct"
@@ -18,6 +18,7 @@ func removeElements(head *_struct.ListNode, val int) *_struct.ListNode {
 	}
 	return dummy.Next
 }
+
 //P206翻转链表
 func reverseList(head *_struct.ListNode) *_struct.ListNode {
 	if head == nil || head.Next == nil {
